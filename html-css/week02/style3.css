@@ -1,0 +1,99 @@
+main{
+    /*max-width:1920 px;*/
+    display: flex;
+    flex-direction: column;
+   
+    
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0 px;
+    
+
+}
+#grid-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style-type: none;
+    justify-content: space-between;
+  }
+  #grid-flex .grid-item {
+    flex-basis: 23%;
+    background-color: rgb(42, 124, 165);
+    text-align: center;
+    max-width: 100%;
+   
+    border-width: 200 px; 
+    border-color: rgb(117, 21, 21); 
+  }
+
+.grid-item img {
+    max-width: 100%;
+    display: block;
+    margin: auto;
+    object-fit: cover;
+    background-color: white;
+    transform: scale(0.8);
+  }
+  .grid-item img:hover {
+    transform: scale(1);
+  }
+
+  /* Style for the first item (spanning two columns) */
+  #grid-flex .grid-item:nth-child(1) {
+    flex-basis: 48%;
+    background-color: rgb(42, 52, 165);
+  }
+  #grid-flex .grid-item:nth-child(2) {
+    flex-basis: 48%;
+    background-color: rgb(42, 42, 165);
+  }
+
+  h1{
+    text-align: center;
+    font-size: 4rem;
+    background-color: cornflowerblue;
+    
+  }
+
+ h2{
+    text-align: center;
+    font-size: 2rem;
+   
+     
+  }
+
+  p {
+    font-family: inherit;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-top: 1rem;
+  }
+
+  /* Styling for tab */
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    #grid-flex .grid-item {
+        /*flex-basis: 29.33%;*/
+    }
+    #grid-flex .grid-item:nth-child(1) {
+      flex-basis: 48%;
+      background-color: aliceblue;
+    }
+    #grid-flex .grid-item:nth-child(2) {
+      flex-basis: 48%;
+      background-color: aliceblue;
+    }
+  }
+  /*Styling for mobile*/
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    #grid-flex {
+      flex-direction: row;
+    }
+    #grid-flex .grid-item {
+      flex-basis: 45%;
+    }
+    #grid-flex .grid-item:nth-child(1) {
+      flex-basis: 100%;
+      background-color: aliceblue;
+    }
+  }
