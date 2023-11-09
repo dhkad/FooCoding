@@ -22,10 +22,8 @@ main{
     background-color: rgb(42, 124, 165);
     text-align: center;
     max-width: 100%;
-   
-    border-width: 200 px; 
-    border-color: rgb(117, 21, 21); 
-  }
+
+     }
 
 .grid-item img {
     max-width: 100%;
@@ -44,10 +42,7 @@ main{
     flex-basis: 48%;
     background-color: rgb(42, 52, 165);
   }
-  #grid-flex .grid-item:nth-child(2) {
-    flex-basis: 48%;
-    background-color: rgb(42, 42, 165);
-  }
+  
 
   h1{
     text-align: center;
