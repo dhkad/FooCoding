@@ -1,10 +1,17 @@
+ul{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+
+}
+
 main{
     
-   
     flex-direction: column;
     background-color: #f2f2f2;
     margin: 0;
-    padding: 0 px;
+    padding: 10 px;
     
 }
 
@@ -16,7 +23,7 @@ main{
   }
 
   #grid-flex .grid-item {
-    flex-basis: 23%;
+    flex-basis: 46%;
     background-color: rgb(42, 124, 165);
     text-align: center;
     
@@ -37,7 +44,7 @@ main{
 
   /* Style for the first item */
   #grid-flex .grid-item:nth-child(1) {
-    flex-basis: 48%;
+    flex-basis: 99%;
     background-color: rgb(42, 52, 165);
   }
   
@@ -65,30 +72,35 @@ main{
   /* Styling for tabet */
   @media screen and (min-width: 481px) and (max-width: 768px) {
     #grid-flex .grid-item {
-        flex-basis: 40%;
+        flex-basis: 28%;
         justify-content: space-between
     }
 
     #grid-flex .grid-item:nth-child(1) {
-      flex-basis: 100%;
+      flex-basis: 48%;
+      background-color: aliceblue;
+    }
+
+    #grid-flex .grid-item:nth-child(2) {
+      flex-basis: 48%;
       background-color: aliceblue;
     }
    
   }
 
-  /*Styling for mobile*/
-  @media screen and (min-width: 320px) and (max-width: 480px) {
+  /*Styling for desktop*/
+  @media screen and (min-width: 1024px) {
     #grid-flex {
         flex-basis: 40%;
         justify-content: space-between
     }
 
     #grid-flex .grid-item {
-      flex-basis: 40%;
+      flex-basis: 23%;
     }
     
     #grid-flex .grid-item:nth-child(1) {
-      flex-basis: 100%;
+      flex-basis: 48%;
       background-color: aliceblue;
     }
   }
